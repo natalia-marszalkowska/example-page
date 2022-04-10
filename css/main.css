@@ -1,4 +1,47 @@
-body {
-  background-color: orange;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  color: green;
+}
+
+.nav {
+  display: fixed;
+  height: 5rem;
+  background-color: whitesmoke;
+}
+.nav__items {
+  display: flex;
+}
+.nav__item {
+  list-style-type: none;
+  padding: 2rem;
+}
+.nav__item a:link, .nav__item a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #14140F;
+}
+.nav__item a:hover, .nav__item a:active {
+  color: #F26800;
+  transition: all 0.2s;
+}
+
 /*# sourceMappingURL=main.css.map */
