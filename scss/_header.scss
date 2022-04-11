@@ -1,3 +1,26 @@
-h1 {
-    color: green;
+.header {
+    background-color: brown;
+    height: 78vh;
+    position: relative;
+    background-position: center;
+    background-image: url("../images/header.jpg");
+
+    
+    &__text-box {
+        background-color: antiquewhite;
+        width: 35%;
+        padding: 1.5rem;
+        position: relative;        
+        left: 60%;
+        top: 40%;        
+
+        &-border {
+            background-color: antiquewhite;
+            padding: 3rem;
+            border: solid 2px $dark;
+        }
+        
+    }
+
+    
 }

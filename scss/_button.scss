@@ -1,0 +1,14 @@
+.btn {
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    color: $dark;
+    padding: 1rem 0;
+
+    &:hover {
+        text-decoration: underline;
+        transition: all .2s;
+    }
+}
