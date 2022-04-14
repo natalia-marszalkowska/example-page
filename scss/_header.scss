@@ -1,5 +1,4 @@
 .header {
-    background-color: brown;
     height: 78vh;
     position: relative;
     background-position: center;
@@ -7,15 +6,16 @@
 
     
     &__text-box {
-        background-color: antiquewhite;
+        background-color: $white;
         width: 35%;
         padding: 1.5rem;
+        border-radius: 5px;
         position: relative;        
         left: 60%;
         top: 40%;        
 
         &-border {
-            background-color: antiquewhite;
+            background-color: $white;
             padding: 3rem;
             border: solid 2px $dark;
         }

@@ -14,6 +14,57 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
+  background-color: whitesmoke;
+}
+
+.about {
+  height: 70rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about__header {
+  text-align: center;
+}
+.about__header::after {
+  content: "";
+  background-color: #14140F;
+  width: 80%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-m {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 5rem;
 }
 
 .btn {
@@ -30,23 +81,74 @@ body {
   transition: all 0.2s;
 }
 
+.card {
+  width: 25%;
+  height: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 1rem 2rem rgba(20, 20, 15, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.card__background--1 {
+  background-image: url("../images/card1.jpg");
+  background-size: cover;
+}
+.card__background--2 {
+  background-image: url("../images/card2.jpg");
+  background-size: cover;
+}
+.card__background--3 {
+  background-image: url("../images/card3.jpg");
+  background-size: cover;
+}
+.card__text-box {
+  background-color: rgb(255, 241, 223);
+  padding: 1.2rem;
+  padding-bottom: 0;
+  border-radius: 5px;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  transform: translateY(50%);
+  transition: all 1s ease;
+}
+.card__text-box-border {
+  border: solid 1px #14140F;
+  border-bottom: none;
+  padding: 1.5rem;
+}
+.card:hover .card__text-box {
+  transform: translateY(0);
+}
+.card__text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.cards {
+  display: flex;
+  height: 50rem;
+  justify-content: space-around;
+}
+
 .header {
-  background-color: brown;
   height: 78vh;
   position: relative;
   background-position: center;
   background-image: url("../images/header.jpg");
 }
 .header__text-box {
-  background-color: antiquewhite;
+  background-color: rgb(255, 241, 223);
   width: 35%;
   padding: 1.5rem;
+  border-radius: 5px;
   position: relative;
   left: 60%;
   top: 40%;
 }
 .header__text-box-border {
-  background-color: antiquewhite;
+  background-color: rgb(255, 241, 223);
   padding: 3rem;
   border: solid 2px #14140F;
 }
@@ -73,18 +175,6 @@ body {
 .nav__item a:hover, .nav__item a:active {
   color: #F26800;
   transition: all 0.2s;
-}
-
-.heading-primary {
-  font-size: 5rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-}
-
-.heading-tertiary {
-  font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.about {
+    height: 70rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;    
+
+    &__header {
+        text-align: center;
+    }
+
+    &__header::after {
+        content: '';
+        background-color: $dark;
+        width: 80%;
+        height: 1px;
+        display: block;
+        margin: 0 auto;
+    }
+}
