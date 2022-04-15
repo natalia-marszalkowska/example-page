@@ -205,7 +205,8 @@ body {
 }
 
 .nav {
-  display: fixed;
+  position: fixed;
+  width: 100vw;
   height: 5rem;
   background-color: whitesmoke;
 }
