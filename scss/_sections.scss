@@ -1,8 +1,10 @@
 .about {
-    height: 70rem;
-    margin: 5rem;
+    height: auto;
+    margin: 2rem;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;   
+    // align-items: center; 
+    justify-content: center;
 
     &__header {
         text-align: center;
@@ -16,4 +18,65 @@
         display: block;
         margin: 0 auto;
     }
+}
+
+.projects {
+    background-color: rgba($color-primary, .5);
+    height: auto;
+    padding-bottom: 5rem;  
+    
+    &__items{
+    width: 80%;
+      
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-gap: 6rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;}
+    
+    
+    .project {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__header {
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 3rem;
+            color: $white;
+            
+        }
+    
+        &__header::after {
+            content: '';
+            background-color: $white;
+            width: 80%;
+            height: 1px;
+            display: block;
+            margin: 0 auto;
+            
+        }
+
+        &__icon {
+            
+            font-size: 3rem;;
+        }
+
+        &__text {
+            width: 80%;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+            display: inline-block;
+            padding: 1rem;
+            text-align: justify;
+        }
+    }
+
 }

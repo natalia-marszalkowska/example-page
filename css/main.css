@@ -18,10 +18,11 @@ body {
 }
 
 .about {
-  height: 70rem;
-  margin: 5rem;
+  height: auto;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .about__header {
   text-align: center;
@@ -33,6 +34,56 @@ body {
   height: 1px;
   display: block;
   margin: 0 auto;
+}
+
+.projects {
+  background-color: rgba(52, 103, 92, 0.5);
+  height: auto;
+  padding-bottom: 5rem;
+}
+.projects__items {
+  width: 80%;
+  grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 6rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.projects .project {
+  color: rgb(255, 241, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects .project__header {
+  text-align: center;
+  grid-column: 1/-1;
+  padding: 3rem;
+  color: rgb(255, 241, 223);
+}
+.projects .project__header::after {
+  content: "";
+  background-color: rgb(255, 241, 223);
+  width: 80%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+}
+.projects .project__icon {
+  font-size: 3rem;
+}
+.projects .project__text {
+  width: 80%;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  display: inline-block;
+  padding: 1rem;
+  text-align: justify;
 }
 
 .heading-primary {
