@@ -1,5 +1,5 @@
 const form = document.querySelector('.form');
-const username = document.getElementById('name');
+const username = document.getElementById('username');
 const phone = document.getElementById('phone');
 const email = document.getElementById('email');
 const messageContainer = document.querySelector('.message');
@@ -9,8 +9,8 @@ function setError(element, message) {
     const errorDisplay = inputField.querySelector('.error');
 
     errorDisplay.innerText = message;
-    inputField.classlist.add('.error');
-    inputField.classlist.remove('.success');
+    inputField.classList.add('error');
+    inputField.classList.remove('success');
 }
 
 function setSuccess(element) {
@@ -18,8 +18,8 @@ function setSuccess(element) {
     const errorDisplay = inputField.querySelector('.error');
 
     errorDisplay.innerText = '';
-    inputField.classlist.add('.success');
-    inputField.classlist.remove('.error')
+    inputField.classList.add('success');
+    inputField.classList.remove('error')
 }
 
 function isValidEmail(email) {
@@ -32,8 +32,8 @@ function validateForm() {
     const phoneValue = phone.value.trim();
     const emailValue = email.value.trim();
 
-    if (username === '') {
-        setError(username, 'Email is required');
+    if (usernameValue === '') {
+        setError(username, 'Name is required');
     } else {
         setSuccess(username);
     }
@@ -53,13 +53,8 @@ function validateForm() {
     }
 }
 
-function processForm(e) {
-    e.preventDefault();
-    validateForm();
-}
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
     validateForm();
 });

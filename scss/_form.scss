@@ -17,6 +17,7 @@
     padding: 2rem;
     margin: auto;
     border-radius: 1rem;
+    box-shadow: .5rem 1rem 2rem rgba($dark, 0.3);
 
         &-border {
             background-color: $white;
@@ -42,7 +43,29 @@
         border-radius: 1rem;
         padding: .5rem;
         outline: none;
-        border: none;
+        border: none;    
     }
+    .error {
+        color: $highlight;
+        font-size: 0.8rem;
+    }  
+}
+
+.form-group.success input {
+    border: 1px solid green;
+}
+
+.form-group.error input {
+    border: 1px solid $highlight;
+}
+
+.message-container {
+    margin: auto;
+    text-align: center;
+}
+
+.message {
+    font-size: 1.5rem;
+    color: green;
 }
 

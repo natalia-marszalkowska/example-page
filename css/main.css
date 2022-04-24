@@ -450,6 +450,7 @@ select > option {
   padding: 2rem;
   margin: auto;
   border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 2rem rgba(20, 20, 15, 0.3);
 }
 .form-border {
   background-color: rgb(255, 241, 223);
@@ -474,6 +475,28 @@ select > option {
   padding: 0.5rem;
   outline: none;
   border: none;
+}
+.form-group .error {
+  color: #F26800;
+  font-size: 0.8rem;
+}
+
+.form-group.success input {
+  border: 1px solid green;
+}
+
+.form-group.error input {
+  border: 1px solid #F26800;
+}
+
+.message-container {
+  margin: auto;
+  text-align: center;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: green;
 }
 
 /*# sourceMappingURL=main.css.map */
