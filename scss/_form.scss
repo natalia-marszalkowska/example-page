@@ -1,0 +1,48 @@
+.container {
+    width: 50%;
+    height: auto;
+    background-color: red;
+    margin: 3rem auto;
+    padding: 5rem;
+    background-image: url("../images/header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: .5rem 1rem 2rem rgba($dark, 0.3);
+}
+
+.form {
+    background-color: $white;
+    width: 60%;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 1rem;
+
+        &-border {
+            background-color: $white;
+            padding: 3rem;
+            border: solid 2px $dark;
+        }        
+}
+
+.form-group {
+    padding: 1rem;
+    width: 100%;
+
+    label {
+        display: block;
+        font-family:  "Cormorant Garamond", serif;
+        font-size: 2rem;
+        color: $dark;
+        padding-bottom: .5rem;
+    }
+
+    input {
+        width: 100%;
+        border-radius: 1rem;
+        padding: .5rem;
+        outline: none;
+        border: none;
+    }
+}
+
