@@ -499,4 +499,22 @@ select > option {
   color: green;
 }
 
+.footer {
+  background-color: #053D38;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icons a:link, .footer__icons a:visited {
+  text-decoration: none;
+  color: rgb(255, 241, 223);
+  font-size: 3rem;
+  padding: 2rem;
+  text-shadow: 4px 4px 2rem rgba(251, 251, 251, 0.5);
+}
+.footer__icons a:hover, .footer__icons a:active {
+  filter: brightness(80%);
+}
+
 /*# sourceMappingURL=main.css.map */

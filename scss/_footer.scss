@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color-primary-dark;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icons a:link,
+    &__icons a:visited {
+        text-decoration: none;
+        color: $white;
+        font-size: 3rem;
+        padding: 2rem;
+        text-shadow: 4px 4px 2rem rgba(251, 251, 251, .5);
+    }
+
+    &__icons a:hover,
+    &__icons a:active {
+        filter: brightness(80%);
+    }
+}
