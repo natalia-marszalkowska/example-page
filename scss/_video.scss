@@ -1,0 +1,175 @@
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.player {
+    width: 80vw;
+    border-radius: 5px;
+    margin: 5vw;
+    position: relative;
+
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.show-controls {
+    width: 100%;
+    height: 30%;
+    background: dodgerblue;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: transparent;
+
+}
+
+.controls-container {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+    height: 10rem;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.progress-range {
+    width: calc(100% - 3rem);
+    height: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    background: rgba(70, 70, 70, 0.5);
+    border-radius: 1rem;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
+    background-color: $white;
+    border-radius: 1rem;
+}
+
+.controls-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;    
+}
+
+.controls-left,
+.controls-right {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+   justify-content: flex-start;
+}
+
+// LEFT CONTROLS ----------------------
+.controls-left {
+    margin-left: 1.5rem;
+}
+
+// Play & Pause 
+.play-controls {
+    margin-right: 1.5rem;
+}
+
+.fa-play:hover,
+.fa-pause:hover {
+    color: rgba(70, 70, 70, 0.5);
+    cursor: pointer;
+}
+
+// Volume
+.volume-icon {
+    cursor: pointer;
+}
+
+.volume-range {
+    height: 1rem;
+    width: 8rem;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    background: rgba(70, 70, 70, 0.5)
+}
+
+.volume-bar {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    background-color: $white;
+    border-radius: 1rem;
+}
+
+.fa-solid {
+    font-size: 3rem;
+    color: white;
+}
+
+// RIGHT CONTROLS -----------
+.controls-right {
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    color: $white;
+}
+// Speed
+.speed {
+    margin-right: 1.5rem;
+}
+
+select,
+option {
+    cursor: pointer;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-size: 1.5rem;
+    font-family: "Barlow", sans-serif;
+}
+
+select:focus {
+    outline: none;
+}
+
+select > option {
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    font-size: 1.5rem;
+  }
+
+// Time
+
+.time-duration {
+    margin-right: 1.5rem;    
+}
+
+// Fullscreen
+.fullscreen {
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.video-fullscreen {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
