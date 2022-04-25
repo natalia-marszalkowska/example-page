@@ -8,17 +8,17 @@
     overflow: hidden;
 
     &__background--1 {
-        background-image: url("../images/card1.jpg");
+        background-image: linear-gradient(to top, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../images/card1.jpg");
         background-size: cover;
     }
 
     &__background--2 {
-        background-image: url("../images/card2.jpg");
+        background-image: linear-gradient(to top, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../images/card2.jpg");
         background-size: cover;
     }
 
     &__background--3 {
-        background-image: url("../images/card3.jpg");
+        background-image: linear-gradient(to top, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../images/card3.jpg");
         background-size: cover;
     }    
 

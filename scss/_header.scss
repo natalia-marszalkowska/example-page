@@ -5,6 +5,14 @@
     background-image: url("../images/header.jpg");
     background-size: cover;
 
+    &__shadow {
+        height: 25%;
+        width: 100%;
+        background-image: linear-gradient(to top, $white, transparent);
+        position: absolute;
+        bottom: 0;
+    }
+
     
     &__text-box {
         background-color: $white;
@@ -13,12 +21,14 @@
         border-radius: 5px;
         position: relative;        
         left: 60%;
-        top: 40%;        
+        top: 40%;
+        z-index: 2;       
 
         &-border {
             background-color: $white;
             padding: 3rem;
             border: solid 2px $dark;
+            border-radius: 5px;
         }
         
     }

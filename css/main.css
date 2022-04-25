@@ -17,18 +17,19 @@ body {
   background-color: whitesmoke;
 }
 
-.about {
+.projects {
   height: auto;
   margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: whitesmoke;
 }
-.about__header {
+.projects__header {
   text-align: center;
   width: 100%;
 }
-.about__header::after {
+.projects__header::after {
   content: "";
   background-color: #14140F;
   width: 80%;
@@ -37,12 +38,12 @@ body {
   margin: 0 auto;
 }
 
-.projects {
-  background-color: rgba(52, 103, 92, 0.5);
+.abouts {
+  background-color: #346750;
   height: auto;
   padding-bottom: 5rem;
 }
-.projects__items {
+.abouts__items {
   width: 80%;
   grid-column: center-start/center-end;
   display: grid;
@@ -53,31 +54,33 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.projects .project {
-  color: rgb(255, 241, 223);
+
+.about {
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.projects .project__header {
+.about__header {
   text-align: center;
   grid-column: 1/-1;
   padding: 3rem;
-  color: rgb(255, 241, 223);
+  color: whitesmoke;
+  margin-bottom: 4rem;
 }
-.projects .project__header::after {
+.about__header::after {
   content: "";
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   width: 80%;
   height: 1px;
   display: block;
   margin: 0 auto;
 }
-.projects .project__icon {
+.about__icon {
   font-size: 3rem;
 }
-.projects .project__text {
+.about__text {
   width: 80%;
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -87,11 +90,20 @@ body {
   text-align: justify;
 }
 
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  background: whitesmoke;
+}
+
 .form-section {
   width: 100%;
   height: auto;
   padding: 3rem;
-  background-color: rgba(52, 103, 92, 0.5);
+  background-image: linear-gradient(to top, #053d2c, #346750);
 }
 
 .heading-primary {
@@ -150,8 +162,8 @@ body {
   letter-spacing: 1px;
   border: none;
   border-radius: 1rem;
-  background-color: #053D38;
-  color: rgb(255, 241, 223);
+  background-color: #053d2c;
+  color: whitesmoke;
   display: block;
   margin: 1rem auto;
   box-shadow: 0.5rem 1rem 2rem rgba(20, 20, 15, 0.3);
@@ -174,19 +186,19 @@ body {
   overflow: hidden;
 }
 .card__background--1 {
-  background-image: url("../images/card1.jpg");
+  background-image: linear-gradient(to top, rgba(162, 220, 174, 0.4), rgba(5, 61, 44, 0.4)), url("../images/card1.jpg");
   background-size: cover;
 }
 .card__background--2 {
-  background-image: url("../images/card2.jpg");
+  background-image: linear-gradient(to top, rgba(162, 220, 174, 0.4), rgba(5, 61, 44, 0.4)), url("../images/card2.jpg");
   background-size: cover;
 }
 .card__background--3 {
-  background-image: url("../images/card3.jpg");
+  background-image: linear-gradient(to top, rgba(162, 220, 174, 0.4), rgba(5, 61, 44, 0.4)), url("../images/card3.jpg");
   background-size: cover;
 }
 .card__text-box {
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   padding: 1.2rem;
   padding-bottom: 0;
   border-radius: 5px;
@@ -223,19 +235,28 @@ body {
   background-image: url("../images/header.jpg");
   background-size: cover;
 }
+.header__shadow {
+  height: 25%;
+  width: 100%;
+  background-image: linear-gradient(to top, whitesmoke, transparent);
+  position: absolute;
+  bottom: 0;
+}
 .header__text-box {
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   width: 35%;
   padding: 1.5rem;
   border-radius: 5px;
   position: relative;
   left: 60%;
   top: 40%;
+  z-index: 2;
 }
 .header__text-box-border {
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   padding: 3rem;
   border: solid 2px #14140F;
+  border-radius: 5px;
 }
 
 .nav {
@@ -260,20 +281,12 @@ body {
   color: #14140F;
 }
 .nav__item a:hover, .nav__item a:active {
-  color: #F26800;
+  color: #f23400;
   transition: all 0.2s;
 }
 
-.video-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 3rem;
-}
-
 .player {
-  width: 80vw;
+  width: 70vw;
   border-radius: 5px;
   margin: 5vw;
   position: relative;
@@ -321,7 +334,7 @@ body {
 .progress-bar {
   width: 50%;
   height: 100%;
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   border-radius: 1rem;
 }
 
@@ -372,7 +385,7 @@ body {
   width: 50%;
   height: 100%;
   cursor: pointer;
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   border-radius: 1rem;
 }
 
@@ -385,7 +398,7 @@ body {
   justify-content: flex-end;
   margin-right: 1.5rem;
   font-size: 1.5rem;
-  color: rgb(255, 241, 223);
+  color: whitesmoke;
 }
 
 .speed {
@@ -400,7 +413,7 @@ option {
 select {
   background-color: transparent;
   border: none;
-  color: rgb(255, 241, 223);
+  color: whitesmoke;
   font-size: 1.5rem;
   font-family: "Barlow", sans-serif;
 }
@@ -432,7 +445,7 @@ select > option {
 }
 
 .container {
-  width: 50%;
+  width: 70%;
   height: auto;
   background-color: red;
   margin: 3rem auto;
@@ -445,15 +458,27 @@ select > option {
 }
 
 .form {
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   width: 60%;
   padding: 2rem;
   margin: auto;
   border-radius: 1rem;
   box-shadow: 0.5rem 1rem 2rem rgba(20, 20, 15, 0.3);
 }
+.form__header {
+  text-align: center;
+  color: whitesmoke;
+}
+.form__header::after {
+  content: "";
+  background-color: whitesmoke;
+  width: 80%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+}
 .form-border {
-  background-color: rgb(255, 241, 223);
+  background-color: whitesmoke;
   padding: 3rem;
   border: solid 2px #14140F;
 }
@@ -477,7 +502,7 @@ select > option {
   border: none;
 }
 .form-group .error {
-  color: #F26800;
+  color: #f23400;
   font-size: 0.8rem;
 }
 
@@ -486,7 +511,7 @@ select > option {
 }
 
 .form-group.error input {
-  border: 1px solid #F26800;
+  border: 1px solid #f23400;
 }
 
 .message-container {
@@ -500,7 +525,7 @@ select > option {
 }
 
 .footer {
-  background-color: #053D38;
+  background-color: #14140F;
   height: 8rem;
   display: flex;
   justify-content: center;
@@ -508,7 +533,7 @@ select > option {
 }
 .footer__icons a:link, .footer__icons a:visited {
   text-decoration: none;
-  color: rgb(255, 241, 223);
+  color: whitesmoke;
   font-size: 3rem;
   padding: 2rem;
   text-shadow: 4px 4px 2rem rgba(251, 251, 251, 0.5);
