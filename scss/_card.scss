@@ -57,3 +57,41 @@
     height: 50rem;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 1024px) {
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 65%;
+        margin: 2rem;
+    }
+}
+
+
+
+

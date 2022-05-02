@@ -83,3 +83,30 @@
     color: green;
 }
 
+@media only screen and (max-width: 768px) {
+    .abouts__items {
+        grid-gap: 4rem;
+        justify-content: space-between;
+    }
+
+    .about__text {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .form {
+       width: 100%;
+   }
+}

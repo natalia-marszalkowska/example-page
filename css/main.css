@@ -11,6 +11,11 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
 body {
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -38,6 +43,13 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .projects {
+    align-content: center;
+    height: 150rem;
+    justify-content: flex-start;
+  }
+}
 .abouts {
   background-color: #346750;
   height: auto;
@@ -106,6 +118,28 @@ body {
   background-image: linear-gradient(to top, #053d2c, #346750);
 }
 
+@media only screen and (max-width: 1024px) {
+  .abouts__items {
+    grid-gap: 4rem;
+    justify-content: space-between;
+  }
+
+  .about__text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .abouts__items {
+    grid-gap: 4rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+  }
+
+  .about__text {
+    width: 100%;
+  }
+}
 .heading-primary {
   font-size: 5rem;
   font-family: "Cormorant Garamond", serif;
@@ -126,6 +160,11 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+}
 .margin-bottom-sm {
   margin-bottom: 1rem;
 }
@@ -228,6 +267,37 @@ body {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 1024px) {
+  .cards {
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 50%;
+    margin: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 65%;
+    margin: 2rem;
+  }
+}
 .header {
   height: 78vh;
   position: relative;
@@ -259,6 +329,22 @@ body {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header__text-box {
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header__text-box {
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .nav {
   position: fixed;
   width: 100vw;
@@ -524,6 +610,30 @@ select > option {
   color: green;
 }
 
+@media only screen and (max-width: 768px) {
+  .abouts__items {
+    grid-gap: 4rem;
+    justify-content: space-between;
+  }
+
+  .about__text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #14140F;
   height: 8rem;
