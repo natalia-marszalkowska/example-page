@@ -1,0 +1,33 @@
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    background-color: whitesmoke;
+    z-index: 3;
+
+    &__items {
+        display: flex;
+        // padding: 1rem;
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 2rem;
+
+        a:link, a:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: $dark;
+        }
+
+        a:hover, a:active {
+            color: $highlight;
+            transition: all .2s;
+        }
+    }
+
+
+}

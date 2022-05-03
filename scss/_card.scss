@@ -1,0 +1,97 @@
+.card {
+    width: 25%;
+    height: 80%;
+    
+    border-radius: .5rem;
+    box-shadow: .5rem 1rem 2rem rgba($dark, 0.3);
+    position: relative;
+    overflow: hidden;
+
+    &__background--1 {
+        background-image: linear-gradient(to top, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../images/card1.jpg");
+        background-size: cover;
+    }
+
+    &__background--2 {
+        background-image: linear-gradient(to top, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../images/card2.jpg");
+        background-size: cover;
+    }
+
+    &__background--3 {
+        background-image: linear-gradient(to top, rgba($color-primary-light, .4), rgba($color-primary-dark, .4)), url("../images/card3.jpg");
+        background-size: cover;
+    }    
+
+    &__text-box {
+        background-color: $white;
+        padding: 1.2rem;
+        padding-bottom: 0;
+        border-radius: 5px;
+        width: 90%;
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        transform: translateY(50%);
+        transition: all 1s ease;
+
+        &-border {
+            border: solid 1px $dark;
+            border-bottom: none;
+            padding: 1.5rem;
+        }
+    }
+
+    &:hover .card__text-box {
+        transform: translateY(0);
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+}
+
+.cards {
+    display: flex;
+    height: 50rem;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 65%;
+        margin: 2rem;
+    }
+}
+
+
+
+

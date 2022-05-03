@@ -4,9 +4,245 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e03e51c7a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Main page</title>
 </head>
 <body>
+    <nav class="nav">
+        <ul class="nav__items">
+            <li class="nav__item"><a href="#home">Home</a></li>
+            <li class="nav__item"><a href="#projects">Projects</a></li>
+            <li class="nav__item"><a href="#about">About</a></li>            
+            <li class="nav__item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header margin-bottom-lg" id="home">
+        <div class="header__text-box">
+        <div class="header__text-box-border">
+            <h1 class="heading-primary">Welcome</h1>
+            <h3 class="heading-tertiary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed amet nemo ducimus a minus, cum debitis quasi numquam modi totam tempora maiores quidem nihil! Enim sed quibusdam velit perferendis neque.</h3>
+            <a href="#about" class="btn">Explore &#8594;</a>
+        </div></div>
+        <div class="header__shadow"></div>
+    </header>
+
+    <!-- Projects Section -->
+    <div class="projects margin-bottom-lg" id="projects">
+        <div class="projects__header margin-bottom-lg">
+            <h1 class="heading-primary margin-bottom-sm">Find our adventures</h1>
+        </div>
+        <div class="cards">
+        <div class="card card__background--1">
+            <div class="card__text-box">
+                <div class="card__text-box-border">
+                    <h2 class="heading-secondary margin-bottom-sm">Mountain Hiking</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro fugiat quae nihil doloremque officiis nam facere iusto modi, amet non delectus?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card__background--2">
+            <div class="card__text-box">
+                <div class="card__text-box-border">
+                    <h2 class="heading-secondary margin-bottom-sm">Lakes swimming</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro fugiat quae nihil doloremque officiis nam facere iusto modi, amet non delectus?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card__background--3">
+            <div class="card__text-box">
+                <div class="card__text-box-border">
+                    <h2 class="heading-secondary margin-bottom-sm">Waterfall seeking</h2>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro fugiat quae nihil doloremque officiis nam facere iusto modi, amet non delectus?</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div class="abouts margin-bottom-lg" id="about">
+        <div class="about__header">
+            <h1 class="heading-primary">About us</h1>
+        </div>
+        <div class="abouts__items">
+        <div class="about">
+            <div class="about__icon">
+                <i class="fa-solid fa-dog"></i>
+            </div>
+            <h2 class="heading-secondary">
+                Take your dog if you want to
+            </h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere fugiat nihil quisquam sequi, et animi doloribus, aliquam repellat nostrum quod officia
+
+            </p>
+        </div>
+        <div class="about">
+            <div class="about__icon">
+                <i class="fa-regular fa-moon"></i>
+            </div>
+            <h2 class="heading-secondary">
+                We sleep under the stars
+            </h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere fugiat nihil quisquam sequi, et animi doloribus, aliquam repellat nostrum quod officia
+
+            </p>
+        </div>
+        <div class="about">
+            <div class="about__icon">
+                <i class="fa-regular fa-snowflake"></i>
+            </div>
+            <h2 class="heading-secondary">
+                Might be cold so be prepared
+            </h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere fugiat nihil quisquam sequi, et animi doloribus, aliquam repellat nostrum quod officia
+
+            </p>
+        </div>
+        <div class="about">
+            <div class="about__icon">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <h2 class="heading-secondary">
+                You might want take pictures
+            </h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere fugiat nihil quisquam sequi, et animi doloribus, aliquam repellat nostrum quod officia
+
+            </p>
+        </div>
+        <div class="about">
+            <div class="about__icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h2 class="heading-secondary">
+                Be ready for acitivity
+            </h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere fugiat nihil quisquam sequi, et animi doloribus, aliquam repellat nostrum quod officia
+            </p>
+        </div>
+        <div class="about">
+            <div class="about__icon">
+                <i class="fa-solid fa-crow"></i>
+            </div>
+            <h2 class="heading-secondary">
+                Be ready for meeting wild animals
+            </h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere fugiat nihil quisquam sequi, et animi doloribus, aliquam repellat nostrum quod officia
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+        <div class="projects__header">
+            <h1 class="heading-primary margin-bottom-sm">Check out one of our adventure</h1>
+        </div>
+        <div class="player">
+            <video src="https://pixabay.com/videos/download/video-97998_medium.mp4?attachment" class="video"></video>
+        
+
+        <!-- Show controls -->
+        <div class="show-controls">
+            <div class="controls-container">
+                <!-- Progress -->
+                <div class="progress-range">
+                    <div class="progress-bar"></div>
+                </div>
+                <!-- Controls -->
+                <div class="controls-group">
+                    <!-- Left Controls -->
+                    <div class="controls-left">
+                        <div class="play-controls">
+                            <!-- Icon -->
+                            <i class="fa-solid fa-play" title="Play" id="playBtn"></i>
+                        </div>
+                        <!-- <div class="volume-controls"> -->
+                            <div class="volume">
+                                <!-- Icon -->
+                                <i class="fa-solid fa-volume-up volume-icon"></i>
+                            </div>
+                            <div class="volume-range">
+                                <div class="volume-bar">
+
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="controls-right">
+                        <div class="speed">
+                            <select name="playbackRate" class="player-speed">
+                                <option value="0.5">0.5 x</option>
+                                <option value="0.75">0.75 x</option>
+                                <option value="1" selected>1 x</option>
+                                <option value="1.5">1.5 x</option>
+                                <option value="2">2 x</option>
+                            </select>
+                        </div>
+                        <!-- <div class="time"> -->
+                            <div class="time-elapsed"></div>
+                            <div class="time-duration"></div>
+                        <!-- </div> -->
+                        <div class="fullscreen" title="Fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="form-section" id="contact">
+        <div class="form__header">
+            <h1 class="heading-primary margin-bottom-sm">Find out more</h1>
+        </div>
+        <div class="container">        
+        <form class="form">
+            <div class="form-border">
+            <div class="form-group">
+                <label for="username">Full name</label>
+                <input type="text" id="username" name="username" placeholder="Type your full name" minlength="3" maxlength="100">
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone" placeholder="123-456-789">
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="username@email.com">
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="btnBig">
+                Let us know you!
+            </button>
+            <div class="message-container">
+                <span class="message"></span>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
     
+    <footer class="footer">
+        <div class="footer__icons">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-codepen"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer><script src="scripts/video.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>

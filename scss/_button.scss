@@ -1,0 +1,42 @@
+.btn {
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    color: $dark;
+    padding: 1rem 0;
+
+    &:hover {
+        text-decoration: underline;
+        transition: all .2s;
+    }
+}
+
+.btnBig {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 1rem;
+    background-color: $color-primary-dark;
+    color: $white;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: .5rem 1rem 2rem rgba($dark, 0.3);
+    transition: all .2s ease;
+
+    &:hover {
+        filter: brightness(110%);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        box-shadow: .5rem 1rem 1rem rgba($dark, 0.3);
+    }
+
+}

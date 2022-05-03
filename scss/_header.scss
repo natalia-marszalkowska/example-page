@@ -1,0 +1,55 @@
+.header {
+    height: 78vh;
+    position: relative;
+    background-position: center;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+
+    &__shadow {
+        height: 25%;
+        width: 100%;
+        background-image: linear-gradient(to top, $white, transparent);
+        position: absolute;
+        bottom: 0;
+    }
+
+    
+    &__text-box {
+        background-color: $white;
+        width: 35%;
+        padding: 1.5rem;
+        border-radius: 5px;
+        position: relative;        
+        left: 60%;
+        top: 40%;
+        z-index: 2;       
+
+        &-border {
+            background-color: $white;
+            padding: 3rem;
+            border: solid 2px $dark;
+            border-radius: 5px;
+        }
+        
+    }
+
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__text-box {
+        width: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header__text-box {
+        width: 70%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
